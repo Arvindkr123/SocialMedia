@@ -1,0 +1,58 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  height: 50px;
+  border-bottom: 1px solid lightgray;
+
+  .left {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    cursor: pointer;
+    span {
+      font-weight: bold;
+      font-style: 16px;
+      color: darkblue;
+    }
+    .search {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      border: 1px solid lightgray;
+      border-radius: 5px;
+      padding: 5px;
+      input {
+        border: none;
+        width: 500px;
+        transition: border 0.2s; /* Add a transition for a smooth effect */
+      }
+
+      input:focus {
+        outline: none; /* Remove the default focus outline (optional) */
+        border: none; /* Remove the border when input is in focus */
+      }
+    }
+  }
+  .right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    cursor: pointer;
+    .user {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      img {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        cursor: pointer;
+      }
+      span {
+        font-weight: 500;
+      }
+    }
+  }
+}

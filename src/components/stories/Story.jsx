@@ -3,18 +3,27 @@ import "./story.scss";
 import { AuthContext } from "../../context/authContext";
 const Story = () => {
   const { currentUser } = useContext(AuthContext);
+  //TEMPORARY
   const stories = [
     {
       id: 1,
-      name: "Jhon Doe",
-      image:
-        "https://i0.wp.com/picjumbo.com/wp-content/uploads/perfect-winter-scenery-in-the-mountains-free-photo.jpg?w=600&quality=80",
+      name: "John Doe",
+      img: "https://images.pexels.com/photos/13916254/pexels-photo-13916254.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
     },
     {
       id: 2,
-      name: "Jhon Doe",
-      image:
-        "https://i0.wp.com/picjumbo.com/wp-content/uploads/perfect-winter-scenery-in-the-mountains-free-photo.jpg?w=600&quality=80",
+      name: "John Doe",
+      img: "https://images.pexels.com/photos/13916254/pexels-photo-13916254.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
+    },
+    {
+      id: 3,
+      name: "John Doe",
+      img: "https://images.pexels.com/photos/13916254/pexels-photo-13916254.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
+    },
+    {
+      id: 4,
+      name: "John Doe",
+      img: "https://images.pexels.com/photos/13916254/pexels-photo-13916254.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
     },
   ];
   return (
@@ -27,7 +36,7 @@ const Story = () => {
       {stories?.map((story) => {
         return (
           <div className="story" key={story.id}>
-            <img src={story.image} alt="" />
+            <img src={story.img} alt="" />
             <span>{story.name}</span>
           </div>
         );

@@ -4,4 +4,5 @@ import Rightbar from "./rightbar/Rightbar";
 import Story from "./stories/Story";
 import Posts from "./posts/Posts";
 import Post from "./post/Post";
-export { Navbar, Leftbar, Rightbar, Story, Posts, Post };
+import Comments from "./comments/Comments";
+export { Navbar, Leftbar, Rightbar, Story, Posts, Post, Comments };

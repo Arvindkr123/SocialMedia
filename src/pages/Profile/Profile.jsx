@@ -26,7 +26,7 @@ const Profile = () => {
         />
       </div>
       <div className="profileContainer">
-        <div className="userInfo">
+        <div className="uInfo">
           <div className="left">
             <a target="_blank" href="http://facebook.com">
               <FacebookTwoToneIcon fontSize="large" />

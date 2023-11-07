@@ -36,6 +36,15 @@
           background-color: transparent;
           color: themed("textColor");
           transition: border 0.2s; /* Add a transition for a smooth effect */
+
+          @include mobile{
+            display: none;
+          }
+          @include tablet{
+            width: 200px;
+          }
+
+
         }
 
         input:focus {
@@ -45,6 +54,9 @@
       }
     }
     .right {
+      @include mobile{
+        display: none;
+      }
       display: flex;
       align-items: center;
       gap: 20px;
@@ -53,6 +65,10 @@
         display: flex;
         align-items: center;
         gap: 10px;
+
+        @include tablet {
+         display: none;
+        }
         img {
           width: 30px;
           height: 30px;
